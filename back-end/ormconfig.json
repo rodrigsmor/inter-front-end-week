@@ -1,0 +1,11 @@
+{
+    "name": "default",
+    "type": "postgres",
+    "port": 5432,
+    "username": "admin",
+    "password": "dis-inter",
+    "database": "inter",
+    "entitles": ["src/entity/*.ts"],
+    "logging": false,
+    "synchronize": true
+}

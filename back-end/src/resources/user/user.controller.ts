@@ -3,7 +3,7 @@ import UserService from './user.service';
 
 export class UserController {
     async signin(req: Request, res: Response) {
-        const { email, password } = req.body();
+        const { email, password } = req.body;
         const userService = new UserService();
         
         const user = await userService.signin({ email, password });
@@ -12,6 +12,10 @@ export class UserController {
     }
 
     async signup(req: Request, res: Response) {
-        return res.send('Criando um usuário');
+        const userService = new UserService();
+
+        const user = await userService.signup(req.body);
+
+        return res.status(200).send(user);
     }
 }

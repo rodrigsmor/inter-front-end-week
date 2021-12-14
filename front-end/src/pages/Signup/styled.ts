@@ -42,6 +42,8 @@ export const ButtonContainer = styled.div`
             font-size: 1rem;
             font-weight: 700;
             margin: 0 0 0 5px;
+            text-decoration: none;
+            color: ${({ theme }) => theme.colors.primary }
         }
     }
 `;

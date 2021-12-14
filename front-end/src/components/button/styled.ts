@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const ButtonContainer = styled.button`
     width: 100%;
     height: 46px;
+    cursor: pointer;
+    transition: .5s ease;
     color: ${({ theme }) => theme.colors.background };
     background: ${({ theme }) => theme.colors.primary };
     border: 1px solid ${({ theme }) => theme.colors.primary };
